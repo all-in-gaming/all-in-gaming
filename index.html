@@ -3,132 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALL IN GAMING - PS4 Web Exploit</title>
+    <title>ALL IN GAMING - PS4 Exploit Host</title>
     <style>
-        body {
-            background-color: #0b0e14;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             padding: 20px;
         }
+
         .card {
-            max-width: 600px;
-            margin: 30px auto;
-            background: #151922;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.25);
-            border: 2px solid #1d2636;
-        }
-        .logo-img {
-            width: 170px;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            border: 2px solid #00d4ff;
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
-        }
-        h1 {
-            color: #00d4ff;
-            margin: 10px 0 5px 0;
-            font-size: 32px;
-            letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
-        }
-        .subtitle {
-            color: #94a3b8;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .status {
-            font-size: 18px;
-            color: #e2e8f0;
-            margin-bottom: 20px;
-            background: #0f131d;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px solid #2d3748;
-        }
-        .contact-container {
-            background: #0d111a;
-            padding: 18px;
-            border-radius: 12px;
-            border: 1px dashed #00d4ff;
-            margin-bottom: 25px;
-        }
-        .phone-line {
-            font-size: 19px;
-            color: #2ed573;
-            margin: 10px 0;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        .btn-exploit {
-            background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
-            color: white;
-            padding: 18px 30px;
-            border: none;
-            border-radius: 12px;
-            font-size: 22px;
-            font-weight: bold;
-            cursor: pointer;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 480px;
             width: 100%;
-            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.5);
-            transition: 0.2s;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
         }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00f2fe;
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+        }
+
+        p.desc {
+            color: #c4c4e0;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-exploit {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
         .btn-exploit:hover {
-            opacity: 0.9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.8);
         }
-        .btn-exploit:active {
-            transform: scale(0.98);
+
+        .contacts {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        .footer-text {
-            margin-top: 25px;
-            color: #64748b;
-            font-size: 14px;
+
+        .phone-number {
+            color: #00f2fe;
+            font-size: 17px;
+            font-weight: 600;
+            direction: ltr;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <!-- اللوجو الخاص بـ ALL IN GAMING -->
-    <img src="https://i.ibb.co/YTD9Tk1H/image.jpg" class="logo-img" alt="ALL IN GAMING">
-    
+    <img src="https://i.ibb.co/YTD9Tk1H/image.jpg" alt="ALL IN GAMING" class="logo">
     <h1>ALL IN GAMING</h1>
-    <div class="subtitle">صفحة التهكير المخصصة لأجهزة البلايستيشن</div>
+    <p class="desc">أهلاً بكم في المضيف الرسمي لخدمات صيانة وتهكير أجهزة البلايستيشن</p>
     
-    <!-- مربع حالة التهكير -->
-    <div id="msgs" class="status">جاهز لتشغيل التهكيرة عبر المتصفح</div>
+    <a href="https://karo218.ir/" class="btn-exploit">تفعيل التهكيرة الآن</a>
 
-    <!-- أرقام التواصل والواتساب -->
-    <div class="contact-container">
-        <div class="phone-line">📞 اتصال وواتساب (1): <span style="color:#fff;">01552710022</span></div>
-        <div class="phone-line">💬 اتصال وواتساب (2): <span style="color:#fff;">01091027985</span></div>
-    </div>
-
-    <!-- زر التعديل المباشر -->
-    <button class="btn-exploit" onclick="runExploit()">تفعيل التهكيرة | GoldHEN</button>
-
-    <div class="footer-text">
-        ALL IN GAMING - خدمة وصيانة وإكسسوارات الألعاب
+    <div class="contacts">
+        <span class="phone-number">📞 01552710022</span>
+        <span class="phone-number">📱 01091027985</span>
     </div>
 </div>
-
-<script>
-    function runExploit() {
-        document.getElementById('msgs').innerHTML = "جاري تشغيل الثغرة عبر المتصفح... انتظر قليلاً";
-        document.getElementById('msgs').style.color = "#ffb142";
-        
-        // هنا يتم دمج سكريبت الكيرنل المباشر لـ GoldHEN
-        setTimeout(function(){
-            document.getElementById('msgs').innerHTML = "تم تفعيل GoldHEN بنجاح! يمكنك الخروج الآن";
-            document.getElementById('msgs').style.color = "#2ed573";
-        }, 3000);
-    }
-</script>
 
 </body>
 </html>
